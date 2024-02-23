@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "curious-ellipse-415205",
+  "private_key_id": "abc0f1a98715689f398797d4e4f543b47340b999",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDcKp0Vx4DhbDk9\nsgiGCe44tq5CIIn8AqJeQVlLVG8OqG5Kw0EjL80FMA81WPug2U7yJRk5/ummR+mr\n+Gf8U4a76Cv84MqCSnPqRJ5cS7xKG1nmgJGw9k8hBWATqE0F8BED4RQTyf6n/RZg\n27bqoM/6XwbMwAK+OUCTendKa9yaXZHoW9EYTSYeAaUoJW+6HOh/sjWw0m6Y+fRI\nGqK02KkwlS+hh+3CeEeRKfD60lanp7duQSAp02A8X39kM2BFkalItgGdvPNi5Y2Y\nitcU7g/Ehej7gdWLrhLgTeuF2Rbci9iiArgA0LwSShvqv2qlTt3i9f1FGBaVrn3Z\nVEPAF1vNAgMBAAECggEAIrrOILthxy1tMiA9W/eBDo0ym9fKLGi1+CxSy6E8C5Hi\nJAT853II40Kbg4zP1KWy4FudyRo+/S3m3GvI63K5lDahibhj+X2JH3FHkcOYpg/+\ndG/fi4yvGsRgTXmE/OTLqlL8+copU5KGzyyZhBVt+U64IeBADoW1fA4bdy/gkrDY\n5++MRGD/jkDf0HrZ5w8mOXt/hJJGd870iP4P8WidhHrn4FlzoEMhnfTlIb7aAz8e\nrWC8ELvkXT7YrHW+okcfD/DJOLpq7sullun0u3b1iNvjdcBiz6HSm/8WmZ4oPaOb\nNQZRxZYpn8icgvrLUrkk8vM1tcxXVpSabi7N0KXGOQKBgQD7SfKxHTO/dtpmxgLs\nHKqLICsMlUt8euzdtYf+tnE3VhSabb076uhs1XzutCRGA2tWUsv2tHjKLhZx9Dm0\nFsKJi/0o7orihIqtNZRp0bWvziclLelJwmK9/aLJCFX8IvtuKompTqK2Ix2Nt4Bh\nNpOZhYBovqwCWEnj3XDSim8JbwKBgQDgS0t0LUmKufZoyym8RmdJ5M8yN/XPDQdI\n/cgnslF7Vdxx2/MCbY63464e/D4kZmY7Dxc5kUme/elrdHjHX0BoBNXwXqzZaz3+\nSVHC9PoL3yghN9VAQjia0hWzMBWObDVRC1Hc010kWDaAvT4v+cn8AVZDbRBHefb5\nssHpxP74gwKBgHqqxoYfMzur0UGKN7L662Wu9lTWLFs/xpEUJKb6eJoCs1wPZejx\n6zP1o18DIRHsaWFiWZ68yponlV1bUy/OTHjIlXR9vd6FxQx4s1JUxNRlVkaX+uG+\numT0g5qPLyo+CW7l5P15HYS775lWkpzh/3tZ6C05ps4eOzO4zXJ5kWqRAoGBAKCl\nzVlcxnvSTicovK/ZTUmj1LOHWUv/bORewOmN0saf7NCwVRG8HqifLquKx4eSwE40\ntNHKugximLkaJxfFpX/bVtBfPzZKlZB4O1OD20R9hWSldNwdkiVxq5E4M3hbEKUH\nko6z5NaPSBpVcSEzq/QPkRWiHDLVrIuT+UfSjTy5AoGAAWXRl6mBfWNxfYoe3squ\nV5++2jbFjzOTSfp43xdwBv9qVeRLvZLSp+v7xCmEgOyBleq9ljG0vNMolN4Q/5X0\n5ordf93sIgOngzsuzQPcyXpxoZt/gPsFPYGtJh94nPb+isYDmrWmwxoHk/khgfe7\nKTDcdwFaNSo8D75vkb0eQeI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "audio-34@curious-ellipse-415205.iam.gserviceaccount.com",
+  "client_id": "111407843349669698383",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/audio-34%40curious-ellipse-415205.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

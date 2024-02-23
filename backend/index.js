@@ -11,11 +11,8 @@ const app = express();
 app.use(express.json());
 
 
-const corsOptions = {
-  origin: 'https://eksaq-git-master-kuldeepkd13.vercel.app/', 
-  optionsSuccessStatus: 200 
-};
-app.use(cors(corsOptions));
+
+app.use(cors());
 
 const bodyParser = require('body-parser');
 app.use(bodyParser.json({ limit: '100mb' }));

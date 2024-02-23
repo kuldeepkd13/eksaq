@@ -5,8 +5,9 @@ import React, { useState, useEffect,useRef } from 'react';
 const AudioRecorder = () => {
   const [isRecording, setIsRecording] = useState(false);
   const [recordings, setRecordings] = useState([]);
+  const [isLoadingRecordings, setIsLoadingRecordings] = useState(true);
+ 
   const mediaRecorderRef = useRef(null);
-
 
 
   useEffect(() => {
@@ -16,10 +17,11 @@ const AudioRecorder = () => {
 
   const fetchRecordings = async () => {
     try {
-      const response = await fetch('http://localhost:4500/audio/');
+      const response = await fetch('https://eksaq.onrender.com/audio/');
       const data = await response.json();
       
       setRecordings(data.recordings)
+      setIsLoadingRecordings(false);
     } catch (error) {
       console.error('Error fetching recordings:', error);
     }
@@ -56,7 +58,7 @@ const AudioRecorder = () => {
 
   const uploadAudio = async (audioData, name) => {
     try {
-      const response = await fetch('http://localhost:4500/audio/recordings', {
+      const response = await fetch('https://eksaq.onrender.com/audio/recordings', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -84,7 +86,7 @@ const AudioRecorder = () => {
     audio.play();
   };
 
-  return (
+   return (
     <div className="audio-recorder">
       <h2>Audio Recorder</h2>
       <div className="controls">
@@ -95,7 +97,9 @@ const AudioRecorder = () => {
         )}
       </div>
       <div className="recordings-list">
-        {recordings.length > 0 ? (
+        {isLoadingRecordings ? (
+          <p>Loading recordings...</p>
+        ) : recordings.length > 0 ? (
           <div>
             <h3>Recordings</h3>
             {recordings.map((recording, index) => (

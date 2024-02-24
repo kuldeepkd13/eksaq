@@ -1,6 +1,6 @@
-// AudioRecorder.js
-import React, { useState, useEffect,useRef } from 'react';
-
+import React, { useState, useEffect, useRef } from 'react';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const AudioRecorder = () => {
   const [isRecording, setIsRecording] = useState(false);
@@ -13,7 +13,6 @@ const AudioRecorder = () => {
   useEffect(() => {
     fetchRecordings(); 
   }, []); 
-
 
   const fetchRecordings = async () => {
     try {
@@ -48,8 +47,18 @@ const AudioRecorder = () => {
           };
         };
 
+        // Start the recording
         mediaRecorder.start();
         setIsRecording(true);
+
+        // Stop the recording after 4 seconds
+        setTimeout(() => {
+          if (mediaRecorder.state === 'recording') {
+            mediaRecorder.stop();
+            setIsRecording(false);
+            toast.info('Recording duration limit reached (4 seconds).');
+          }
+        }, 4000); 
       })
       .catch(error => {
         console.error('Error accessing microphone:', error);
@@ -86,7 +95,7 @@ const AudioRecorder = () => {
     audio.play();
   };
 
-   return (
+  return (
     <div className="audio-recorder">
       <h2>Audio Recorder</h2>
       <div className="controls">
